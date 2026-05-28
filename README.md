@@ -9,7 +9,7 @@ built with **Laravel 12**, **Filament**, and a clean modular architecture.
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![Filament](https://img.shields.io/badge/Filament-3.x-FACC15?style=for-the-badge&logoColor=black)](https://filamentphp.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
-[![Status](https://img.shields.io/badge/Status-Private%20Enterprise-111827?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-Portfolio%20Showcase-111827?style=for-the-badge)](#)
 [![Maintained By](https://img.shields.io/badge/Maintained%20By-NziCode-0F172A?style=for-the-badge)](https://github.com/NziCode)
 
 <br>
@@ -23,197 +23,46 @@ built with **Laravel 12**, **Filament**, and a clean modular architecture.
 
 ## ✨ Overview
 
-**En‑TradingGroup** is a private enterprise system designed specifically for the **stone trading industry**.
+**En‑TradingGroup** is a specialized enterprise solution designed for the **global stone trading industry**. This repository serves as a professional portfolio showcase of high-end Laravel engineering.
 
 This platform focuses on:
-
-- stone catalog management
-- single-item product listings
-- technical stone specifications
-- multilingual content delivery
-- admin-driven business workflows
-- scalable future commerce expansion
-
-Unlike a traditional e-commerce store, this system is built around **unique stone pieces**, where each product represents a **specific stone item** rather than stock-based quantity inventory.
+- **Stone Catalog Management:** Handling complex stone types and finishes.
+- **Single-Item Inventory:** Each product is a unique, one-of-a-kind stone piece.
+- **Dynamic Specifications:** Technical stone attributes (Grade, Origin, Dimensions).
+- **Multilingual Excellence:** Full RTL and bilingual support for international trade.
 
 ---
 
-## 🎯 Product Vision
+## 🛡️ Intellectual Property & Usage
 
-The project is being developed as a digital backbone for a modern stone business.
-
-Its goals are to:
-
-- present stone products with professional structure
-- manage categories and technical attributes
-- support bilingual / multilingual publishing
-- provide a clean and maintainable admin experience
-- prepare the platform for future sales, CMS, and automation layers
-
-The emphasis is on:
-
-- clarity
-- scalability
-- maintainability
-- enterprise readiness
-- long-term extensibility
-
----
-
-## 🛡️ Intellectual Property
-
-> ### Proprietary / Closed Source
-> This project and all associated assets are the intellectual property of **NziCode**.  
-> Unauthorized copying, redistribution, or commercial use is strictly prohibited.
+> ### Proprietary Notice
+> This project and its architectural design are the intellectual property of **NziCode**.
+> - ✅ **Permitted:** Code review, architectural evaluation, and learning.
+> - ❌ **Prohibited:** Commercial redistribution, resale, or unauthorized deployment.
 >
-> This repository exists for development, review, and architectural demonstration purposes.
+> **License:** Proprietary - All rights reserved.
 
 ---
 
-## 🏛️ Platform Highlights
+## 🏛️ Architecture & Engineering Standards
 
-### 🪨 Unique Stone Product Modeling
-Designed for listing **individual stone items** with structured metadata such as:
-
-- category
-- stone type
-- finish
-- grade
-- thickness
-- dimensions
-- location / origin
-- descriptive technical notes
-
-### 🌍 Multilingual Content System
-Built with multilingual support in mind:
-
-- Persian
-- English
-- RTL compatibility
-- translatable model fields
-- scalable language expansion
-
-### 🔐 Enterprise Access Control
-Administrative access is managed through a role-based permission system:
-
-- secure admin roles
-- granular access control
-- Filament Shield integration
-- permission-driven backend workflows
-
-### 🧾 Operational Traceability
-System activity can be tracked for accountability and audit readiness through structured logging.
-
-### 🧩 Modular Architecture
-The codebase is organized to support:
-
-- clean separation of concerns
-- reusable components
-- maintainable domain models
-- future resource expansion
+This project follows modern **Enterprise Laravel** standards:
+- **SOLID Principles:** Ensuring maintainability and decoupled logic.
+- **Dynamic Attribute Engine:** A flexible EAV-inspired system to handle stone properties without schema migrations.
+- **Translation-First Design:** Using JSON-based translatable fields for seamless multilingual scaling.
+- **RBAC Security:** Granular permission management via Filament Shield.
+- **Audit Trails:** Full activity logging for every administrative action.
 
 ---
 
-## 🚀 Core Business Modules
+## 🧱 Core Domain Model
 
-### 1) Product Information Management (PIM)
-A structured catalog system for premium stone listings:
+The system is built around a robust data structure tailored for the stone industry:
 
-- categories
-- products
-- multilingual descriptions
-- SEO-friendly slugs
-- technical metadata
-- featured items
-- media attachments
-
-### 2) Dynamic Attribute Engine
-A flexible system for stone-specific properties without hardcoding every field:
-
-- reusable attributes
-- configurable options
-- product-specific values
-- filterable metadata
-- scalable schema design
-
-### 3) Single-Item Product Logic
-Each product represents a unique stone item, not a stock-based unit:
-
-- no classic inventory count
-- product status-based availability
-- available / sold workflow
-- individual listing lifecycle
-
-### 4) CMS & Brand Presentation
-Future-facing content management for a premium business identity:
-
-- pages
-- banners
-- menus
-- homepage sections
-- multilingual publishing
-- brand storytelling
-
-### 5) Notifications & Integrations
-Planned communication and automation capabilities:
-
-- SMS notifications
-- email workflows
-- background jobs
-- external API integrations
-- event-driven processes
-
----
-
-## 🧱 Current Domain Model
-
-The current data structure is centered on these core entities:
-
-- `Category`
-- `Product`
-- `ProductAttribute`
-- `ProductAttributeOption`
-- `ProductAttributeValue`
-
-### Translation-ready fields
-The following fields are designed to be stored as translatable JSON:
-
-- `name`
-- `description`
-- `location`
-- `value`
-
----
-
-## 🏗️ Architecture & Engineering Standards
-
-This project follows modern Laravel engineering practices:
-
-- SOLID principles
-- clean domain modeling
-- modular growth path
-- migration-first development
-- admin-resource-first backend design
-- maintainable and reviewable code
-- future-ready product structure
-
-The goal is to keep the platform simple enough to evolve, yet structured enough for enterprise use.
-
----
-
-## ⚙️ Current Technical Foundation
-
-The administrative and infrastructure layer is already established with:
-
-- ✅ **Laravel 12**
-- ✅ **Filament Admin Panel**
-- ✅ **Filament Shield**
-- ✅ **Spatie Laravel Permission**
-- ✅ **Spatie Media Library**
-- ✅ **Spatie Activitylog**
-- ✅ **Spatie Laravel Translatable**
-
-This means the project is ready for **core domain implementation** and **Filament resource development**.
+- **Categories:** Nested structure for stone types (e.g., Marble, Granite, Travertine).
+- **Products:** Represents unique stone blocks or slabs.
+- **Dynamic Attributes:** Customizable specs like "Quarry Location", "Compression Strength", or "Finish Type".
+- **Media System:** High-resolution gallery management for premium product presentation.
 
 ---
 
@@ -221,97 +70,53 @@ This means the project is ready for **core domain implementation** and **Filamen
 
 | Layer | Technology |
 |------|------------|
-| Backend | Laravel 12 |
-| Admin Panel | Filament |
-| Language | PHP 8.2+ |
-| Authorization | Filament Shield + Spatie Permission |
-| Media Management | Spatie Media Library |
-| Translations | Spatie Laravel Translatable |
-| Activity Logging | Spatie Activitylog |
-| Database | MySQL / MariaDB |
-| Frontend Direction | CMS-driven, multilingual, RTL-ready |
+| **Core Framework** | Laravel 12.x (Latest) |
+| **Admin Panel** | Filament v3 (TALL Stack) |
+| **Language** | PHP 8.2+ |
+| **Security** | Filament Shield (Spatie Permission) |
+| **Media** | Spatie Media Library |
+| **Logs** | Spatie Activitylog |
+| **Internationalization** | Spatie Laravel Translatable (JSON) |
+| **Database** | MySQL / MariaDB |
 
 ---
 
 ## 🗺️ Development Roadmap
 
-### Phase I — Foundation
-- [x] Laravel installation
-- [x] Filament setup
-- [x] Shield / permission structure
-- [x] Media library integration
-- [x] Activity logging integration
-- [x] Translation support integration
+### 🟢 Phase I — Foundation (Complete)
+- [x] Core Framework & Environment setup.
+- [x] Administrative RBAC (Shield) implementation.
+- [x] Media & Activity Log infrastructure.
+- [x] Translation engine integration.
 
-### Phase II — Core Domain Modeling
-- [x] Categories
-- [x] Products
-- [x] Dynamic attributes
-- [x] Translation-ready schema
-- [ ] Filament resources for domain entities
-- [ ] Slug automation / refinement
+### 🟡 Phase II — Core Domain (In Progress)
+- [x] Database Schema for Categories & Products.
+- [x] Dynamic Attribute & Option models.
+- [ ] Filament Resource development for Catalog.
+- [ ] Advanced multilingual SEO & Slug management.
 
-### Phase III — Catalog Management
-- [ ] Advanced filters
-- [ ] Product media galleries
-- [ ] SEO metadata
-- [ ] Search improvements
-- [ ] Product detail enrichment
+### ⚪ Phase III — Catalog & UX
+- [ ] Dynamic filtering system for stone specs.
+- [ ] Product media gallery workflows.
+- [ ] Detailed technical specification sheets.
 
-### Phase IV — Commerce Layer
-- [ ] Inquiry / order workflow
-- [ ] Customer interactions
-- [ ] Payment handling
-- [ ] Transaction logs
-- [ ] Admin-side order management
-
-### Phase V — CMS & Website
-- [ ] Pages
-- [ ] Menus
-- [ ] Banners
-- [ ] General settings
-- [ ] Homepage management
-- [ ] Multilingual publishing
-
-### Phase VI — Integrations
-- [ ] SMS notifications
-- [ ] Email automation
-- [ ] Queue-based jobs
-- [ ] External API integrations
-
----
-
-## 🔍 Repository Purpose
-
-This repository is intended to demonstrate:
-
-- technical architecture
-- clean Laravel engineering
-- enterprise admin design
-- multilingual product modeling
-- maintainable business logic
-- premium private platform development
-
----
-
-## 📌 Notes
-
-This project is currently in active development and may evolve as the business requirements become more precise.
-
-Some dependencies in the Laravel ecosystem may require specific platform extensions. If Composer reports a platform requirement error, verify your PHP CLI configuration and enabled extensions.
+### ⚪ Phase IV — Commerce & CRM
+- [ ] Inquiry & Lead management system.
+- [ ] Order workflow for unique items.
+- [ ] Customer interaction history.
 
 ---
 
 ## ✍️ Branding & Signature
 
-**Designed, developed, and maintained by [NziCode](https://github.com/NziCode)**
+**Designed and Engineered by [NziCode](https://github.com/NziCode)**
 
-> Precision-built enterprise software for premium stone commerce.
+> *Precision-built software for the modern stone industry.*
 
 ---
 
-## 🔒 License
-
-This repository is private and proprietary.
-
-All rights reserved by **NziCode**.
+## 🔒 Security & Privacy
+To maintain security and client privacy:
+- All sensitive credentials and API keys are managed via `.env` (excluded from Git).
+- No real-world client data or proprietary media is included in this public repository.
+- Use `composer install` and `php artisan migrate` for local environment setup.
