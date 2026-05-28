@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪨 stone-trading-platform
+# stone-trading-platform
 ### Enterprise Stone Trading Platform
 
 A modular platform for **stone catalog management, product specification modeling, and multilingual business workflows**,  
@@ -25,15 +25,14 @@ built with **Laravel 12**, **Filament**, and a scalable architecture.
 **stone-trading-platform** is a modular backend system designed for the **stone trading and catalog management industry**.
 
 The platform focuses on:
+- Structured stone product catalogs
+- Single-item product listings (Unique Blocks/Slabs)
+- Technical stone specifications
+- Multilingual content management
+- Admin-driven workflows
+- Scalable architecture for future commerce features
 
-- structured stone product catalogs
-- single-item product listings
-- technical stone specifications
-- multilingual content management
-- admin-driven workflows
-- scalable architecture for future commerce features
-
-Unlike traditional e‑commerce systems, this platform models **unique stone items**, where each product represents a **specific stone block or slab**, not a quantity-based inventory item.
+Unlike traditional e-commerce systems, this platform models **unique items**, where each product represents a **specific block or slab**, not a quantity-based inventory item.
 
 ---
 
@@ -41,165 +40,75 @@ Unlike traditional e‑commerce systems, this platform models **unique stone ite
 
 The project aims to provide a flexible foundation for digital stone catalogs and administrative workflows.
 
-Main goals:
-
-- structured product management
-- flexible attribute modeling
-- multilingual publishing
-- maintainable backend architecture
-- extensibility for future commerce or CMS layers
-
-Key design principles:
-
-- clarity
-- scalability
-- maintainability
-- modular development
-- long-term extensibility
+### Main Objectives:
+- **Structured Product Management:** Handling complex stone data with precision.
+- **Flexible Attribute Modeling:** Dynamic specifications for different stone types.
+- **Multilingual Publishing:** Seamlessly managing content across multiple locales.
+- **Scalable Architecture:** Built on Laravel 12 for long-term maintainability.
 
 ---
 
 ## 🛡️ Usage Notice
 
 > This repository is published primarily for **development and portfolio demonstration**.
->
 > Unauthorized redistribution or commercial use of this project without permission is not allowed.
 
 ---
 
-## 🏛️ Platform Highlights
+## 🏗️ Platform Highlights
 
-### 🪨 Unique Stone Product Modeling
-Designed for managing **individual stone items** with structured metadata such as:
+### Unique Item Modeling
+Designed for managing individual stone items with structured metadata:
+- Category & Type
+- Finish & Grade
+- Precise Dimensions (Length, Width, Height)
+- Weight & Origin
+- Current Status (Available / Sold)
 
-- category
-- stone type
-- finish
-- grade
-- thickness
-- dimensions
-- location / origin
-- descriptive technical notes
+### Multilingual Content System
+Full support for international markets:
+- Translatable model fields (Name, Description, Location)
+- RTL compatibility (Persian/Arabic support)
+- Scalable language configuration
 
-### 🌍 Multilingual Content System
-Built with multilingual support:
-
-- Persian
-- English
-- RTL compatibility
-- translatable model fields
-- scalable language expansion
-
-### 🔐 Access Control
-Administrative access uses a role‑based permission system:
-
-- secure admin roles
-- granular permissions
-- Filament Shield integration
-
-### 🧾 Activity Logging
-System activities can be tracked for transparency and debugging purposes using structured logging.
-
-### 🧩 Modular Architecture
-The codebase is structured to support:
-
-- clean separation of concerns
-- reusable components
-- maintainable domain models
-- scalable system growth
+### Enterprise Admin Features
+- **Role-Based Access Control (RBAC):** Granular permissions for staff and admins.
+- **Activity Logging:** Comprehensive audit trails for every change in the system.
+- **Media Management:** High-quality image handling for stone slabs and blocks.
 
 ---
 
 ## 🚀 Core Business Modules
 
-### 1) Product Information Management
-A structured catalog system for stone listings:
-
-- categories
-- products
-- multilingual descriptions
-- SEO-friendly slugs
-- technical metadata
-- featured items
-- media attachments
+### 1) Product Information Management (PIM)
+A structured system for stone listings including categories, slugs, and multilingual technical descriptions.
 
 ### 2) Dynamic Attribute Engine
-A flexible system for product specifications without rigid database schemas:
+A flexible system for defining product specifications (e.g., Color, Density, Water Absorption) without altering the database schema.
 
-- reusable attributes
-- configurable options
-- product-specific values
-- filterable metadata
+### 3) Single-Item Inventory Logic
+Logic tailored for high-value unique items where each SKU represents exactly one physical item.
 
-### 3) Single-Item Product Logic
-Each product represents a unique item:
-
-- no traditional inventory counts
-- availability controlled by product status
-- lifecycle management for each listing
-
-### 4) CMS Layer (Planned)
-Future content management capabilities:
-
-- pages
-- banners
-- menus
-- homepage sections
-- multilingual content publishing
-
-### 5) Integrations (Planned)
-
-- notifications
-- email workflows
-- background jobs
-- API integrations
+### 4) CMS & Content Layer (Planned)
+Future capabilities for managing pages, banners, and marketing content across the platform.
 
 ---
 
-## 🧱 Current Domain Model
+## 🧱 Domain Model Architecture
 
-Core entities currently implemented:
-
+Core entities implemented in the system:
 - `Category`
-- `Product`
-- `ProductAttribute`
+- `Product` (Single-item focus)
+- `ProductAttribute` (Dynamic Specs)
 - `ProductAttributeOption`
 - `ProductAttributeValue`
 
 ### Translation-ready fields
-
-The following fields support JSON-based translations:
-
+The following fields utilize JSON-based translations via `spatie/laravel-translatable`:
 - `name`
 - `description`
 - `location`
-- `value`
-
----
-
-## 🏗️ Architecture Principles
-
-This project follows modern Laravel development practices:
-
-- SOLID principles
-- clean domain modeling
-- migration-first development
-- admin-resource driven backend design
-- maintainable and scalable architecture
-
----
-
-## ⚙️ Current Technical Foundation
-
-The administrative infrastructure includes:
-
-- ✅ **Laravel 12**
-- ✅ **Filament Admin Panel**
-- ✅ **Filament Shield**
-- ✅ **Spatie Laravel Permission**
-- ✅ **Spatie Media Library**
-- ✅ **Spatie Activitylog**
-- ✅ **Spatie Laravel Translatable**
+- `value` (for attributes)
 
 ---
 
@@ -207,69 +116,46 @@ The administrative infrastructure includes:
 
 | Layer | Technology |
 |------|------------|
-| Backend | Laravel 12 |
-| Admin Panel | Filament |
-| Language | PHP 8.2+ |
-| Authorization | Filament Shield + Spatie Permission |
-| Media Management | Spatie Media Library |
-| Translations | Spatie Laravel Translatable |
-| Activity Logging | Spatie Activitylog |
-| Database | MySQL / MariaDB |
+| **Backend Framework** | Laravel 12 |
+| **Admin Panel** | Filament 3.x |
+| **Language** | PHP 8.2+ |
+| **Security/RBAC** | Filament Shield + Spatie Permission |
+| **Media Handling** | Spatie Media Library |
+| **Translations** | Spatie Laravel Translatable |
+| **Audit Trail** | Spatie Activitylog |
+| **Database** | MySQL / MariaDB |
 
 ---
 
-## 🗺️ Development Roadmap
+## 🗺️ Roadmap
 
-### Phase I — Foundation
-- [x] Laravel installation
-- [x] Filament setup
-- [x] Shield / permission structure
-- [x] Media library integration
-- [x] Activity logging integration
-- [x] Translation support integration
+### Phase I — Foundation & Infrastructure (Completed)
+- [x] Laravel 12 & Filament Setup
+- [x] RBAC & Permission Structure
+- [x] Translation & Media Integration
+- [x] Activity Logging
 
-### Phase II — Core Domain Modeling
-- [x] Categories
-- [x] Products
-- [x] Dynamic attributes
-- [x] Translation-ready schema
-- [ ] Filament resources for domain entities
-- [ ] Slug automation
+### Phase II — Core Domain Modeling (In Progress)
+- [x] Categories & Product Schema
+- [x] Dynamic Attribute Engine
+- [ ] Filament Admin Resources
+- [ ] Automated Slug Generation
 
-### Phase III — Catalog Management
-- [ ] Advanced filters
-- [ ] Product media galleries
-- [ ] SEO metadata
-- [ ] Search improvements
+### Phase III — Advanced Catalog
+- [ ] Multi-criteria Filtering
+- [ ] High-Res Gallery Management
+- [ ] Technical PDF Data Sheets
 
-### Phase IV — Commerce Layer
-- [ ] Inquiry / order workflows
-- [ ] customer interaction management
-- [ ] transaction logging
-
-### Phase V — CMS
-- [ ] pages
-- [ ] menus
-- [ ] banners
-- [ ] homepage management
-
-### Phase VI — Integrations
-- [ ] notifications
-- [ ] email automation
-- [ ] queue-based jobs
-- [ ] external APIs
-
----
-
-## 📌 Notes
-
-This project is under active development and may evolve as requirements expand.
+### Phase IV — Commerce & CMS
+- [ ] Inquiry Management
+- [ ] Content Pages & Navigation
+- [ ] Frontend API Integration
 
 ---
 
 ## ✍️ Author
 
-Developed and maintained by **NziCode**
+Developed and maintained by **NziCode**.
 
 ---
 
