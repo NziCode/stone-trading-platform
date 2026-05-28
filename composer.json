@@ -1,10 +1,19 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "nzicode/stone-trading-platform",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "description": "Enterprise-grade stone trading and catalog management platform built with Laravel and Filament.",
+    "keywords": [
+        "laravel",
+        "filament",
+        "cms",
+        "stone",
+        "trading",
+        "pim",
+        "multilingual",
+        "enterprise"
+    ],
+    "license": "proprietary",
     "require": {
         "php": "^8.2",
         "bezhansalleh/filament-shield": "^3.3",
