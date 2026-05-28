@@ -1,220 +1,295 @@
-# 🏗️ En-TradingGroup - Enterprise Stone Trading System
+<div align="center">
 
-A professional, scalable, and multilingual stone trading platform built with **Laravel 12**.  
-This project is designed as a modular enterprise solution for managing stone products, inventory, sales operations, content management, and administrative workflows.
+# 🏗️ En‑TradingGroup
+### Enterprise Stone Trading System
 
-> This repository currently represents the **core backend/admin infrastructure** of the platform and is being developed incrementally with clean architecture and long-term scalability in mind.
+A premium, enterprise-grade platform for **global stone & building materials trade**  
+designed with **Laravel 12**, **Filament**, and a scalable modular architecture.
 
-[![Laravel Version](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
-[![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-blue.svg)](https://www.php.net)
-[![Filament Version](https://img.shields.io/badge/Filament-3.x-orange.svg)](https://filamentphp.com)
+[![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![Filament](https://img.shields.io/badge/Filament-3.x-FACC15?style=for-the-badge&logoColor=black)](https://filamentphp.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Status](https://img.shields.io/badge/Status-Private%20Enterprise-111827?style=for-the-badge)](#)
+[![Maintained By](https://img.shields.io/badge/Maintained%20By-NziCode-0F172A?style=for-the-badge)](https://github.com/NziCode)
 
----
+<br>
 
-## 📌 Project Overview
+> **A portfolio-grade showcase of enterprise Laravel engineering**  
+> built for high-scale stone inventory, order workflows, multilingual content, and operational control.
 
-**En-TradingGroup** is an enterprise-grade system intended for the stone and building materials industry.  
-It is being developed to support both **administrative operations** and **future e-commerce capabilities**, including:
-
-- dynamic stone/product management
-- category and specification management
-- inventory tracking
-- role-based administration
-- content and page management
-- multilingual content handling
-- online order and payment workflow
-- SMS notification integration
-- maintainable and extensible backend architecture
-
-The main goal of this project is to provide a **robust, modular, and production-ready foundation** for a modern stone trading business.
+</div>
 
 ---
 
-## 🛡️ Intellectual Property Notice
+## ✨ Overview
 
-**Proprietary Software:**  
-The source code, business logic, and assets within this repository are the intellectual property of **NziCode**.  
-Unauthorized copying, modification, redistribution, or commercial use of this software is strictly prohibited without explicit written permission.
+**En‑TradingGroup** is a private-enterprise software solution built for the stone and building materials industry.
 
-This repository is intended for **development, evaluation, and portfolio/review purposes** only.
+It is designed to manage:
 
----
+- **large-scale stone catalogs**
+- **dynamic technical specifications**
+- **real-time inventory**
+- **sales and order pipelines**
+- **multilingual content**
+- **enterprise-grade administrative workflows**
 
-## 🧱 Current Development Status
-
-At the current stage, the project foundation and core admin infrastructure have been initialized.
-
-### ✅ Implemented / Installed
-- Laravel 12 project base
-- Filament admin panel
-- Filament Shield integration
-- Role & permission foundation
-- Media management infrastructure
-- Activity logging infrastructure
-- Initial admin-related setup and package integration
-
-### 🚧 Planned Modules
-- Product / stone management
-- Category hierarchy
-- Dynamic attributes and specifications
-- Inventory and stock tracking
-- Orders and order items
-- Payment integration
-- CMS pages, menus, banners, and settings
-- Multilingual content architecture
-- SMS notification services
-- SEO-ready content structure
+This repository is presented as a **professional showcase** of architecture, engineering standards, and product thinking using modern Laravel tooling.
 
 ---
 
-## 🛠️ Technology Stack
+## 🧠 Product Vision
 
-- **Framework:** Laravel 12
-- **Language:** PHP 8.2+
-- **Admin Panel:** Filament 3
-- **Authorization:** Filament Shield + Spatie Permission
-- **Media Handling:** Spatie Media Library
-- **Activity Tracking:** Spatie Activitylog
-- **Frontend Build Tools:** Vite / NPM
-- **Database:** MySQL / MariaDB
-- **Architecture Goal:** Modular, service-oriented, maintainable codebase
+The system is being engineered to serve as a complete digital backbone for a modern stone trading business:
 
----
+- From **cataloging thousands of stone variants**
+- To **tracking stock in units and square meters**
+- To **managing content, branding, and operational workflows**
+- To **supporting multilingual B2B and B2C sales environments**
 
-## 📦 Installedحتماً. در ادامه یک نسخه **توسعه‌یافته، حرفه‌ای و قابل استفاده برای GitHub** از README فعلی‌ات می‌دهم که هم حالت **Portfolio/Showcase** را حفظ کند، هم وضعیت واقعی پروژه (Laravel 12 + Filament + Shield + Media Library + Activity Log) را دقیق و استاندارد توضیح دهد، و هم **Roadmap ماژول‌های فروش سنگ** را شفاف کند.
+The focus is not only on functionality, but also on:
 
-می‌توانی همین را جایگزین `README.md` کنی:
-```md
-# 🏗️ En-TradingGroup — Enterprise Stone Trading System (Laravel 12)
-
-A professional, private-enterprise platform designed for **global stone & building materials trade**.
-This repository is primarily a **portfolio showcase** demonstrating clean architecture, modular design, and enterprise-grade implementation using **Laravel 12** and **Filament**.
-
-[![Laravel Version](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
-[![Filament Version](https://img.shields.io/badge/Filament-3.x-yellow.svg)](https://filamentphp.com)
+- maintainability
+- extensibility
+- consistency
+- security
+- performance
+- long-term product evolution
 
 ---
 
-## 💼 Project Overview
+## 🛡️ Intellectual Property
 
-En-TradingGroup is an industrial solution for:
-
-- Managing **large-scale stone inventories**
-- Handling **dynamic stone specifications** (finish, grade, quarry, thickness, dimensions, etc.)
-- Processing **orders, payments, logistics**
-- Providing a **CMS** for pages, menus, banners, and branding
-- Supporting **multi-language** (Persian/English, RTL-ready)
-
-The goal is a **scalable**, **extensible**, and **standard** codebase with a strong foundation for future growth.
+> ### Proprietary / Closed Source
+> This software and all related assets are the intellectual property of **NziCode**.  
+> Unauthorized copying, modification, redistribution, or commercial usage is strictly prohibited.
+>
+> This repository is published strictly for **portfolio, review, and architectural demonstration purposes**.
 
 ---
 
-## 🛡️ Intellectual Property Notice
+## 🏛️ Platform Highlights
 
-**Proprietary Software:**  
-The source code and assets within this repository are the intellectual property of **NziCode**.  
-Unauthorized copying, modification, or distribution is strictly prohibited.  
-This repository is for **viewing/reviewing purposes only**.
+### 🪨 Advanced Stone Data Modeling
+Purpose-built for the stone industry with support for complex specifications such as:
 
----
-
-## ✅ Current Status (What’s Implemented)
-
-### Admin & Infrastructure
-- ✅ Laravel 12 project initialized
-- ✅ **Filament Admin Panel** integrated
-- ✅ **Roles & Permissions** using:
-  - `bezhansalleh/filament-shield`
-  - `spatie/laravel-permission`
-- ✅ **Media Management** using `spatie/laravel-medialibrary`
-- ✅ **Activity Logging** using `spatie/laravel-activitylog`
-
-> At this stage, the project is ready to start implementing the **core commerce modules** (Categories, Products/Stones, Attributes, Inventory, Orders, Payments, CMS).
-
----
-
-## 🧩 Core Modules (Planned / Roadmap)
-
-### 🪨 Stone Catalog & PIM (Product Information Management)
-- Categories (multi-level)
-- Products / Stones
-- Product galleries & documents (certificates, datasheets)
-- SEO fields (slug/meta)
-- Feature flags (featured, new, etc.)
-
-### 🧬 Dynamic Attributes Engine (Industry Specs)
-A flexible attribute system to support:
 - Quarry
 - Finish
 - Grade
 - Thickness
 - Dimensions
-- Color/Pattern
-- Packaging & Pallet details
+- Surface treatment
+- Color / pattern
+- Custom technical fields
 
-Suggested tables:
-- `attributes`
-- `attribute_values`
-- `product_attribute_values`
+### 📦 Inventory Intelligence
+A flexible inventory engine designed for real-world stone operations:
 
-### 📦 Inventory Engine
-- Stock management by **unit** and/or **m²**
-- Low-stock thresholds & alerts
-- Warehouse/location readiness (future)
+- unit-based stock management
+- $m^2$-based stock management
+- low-stock monitoring
+- stock history and operational transparency
+- future-ready warehouse expansion
 
-### 🛒 Orders & Checkout
-- Cart & cart items
-- Order lifecycle (pending/paid/packing/shipped/delivered/cancelled)
-- Invoices & order notes
-- Admin order management via Filament
+### 🔐 Enterprise Authorization
+A role-driven access model for sensitive business workflows:
 
-### 💳 Payments
-- Gateway abstraction (driver-based)
-- Callback/verify
-- Transaction logging and idempotency (prevent duplicates)
+- Super Admin
+- Sales Manager
+- Content Manager
+- Inventory Operator
+- Support / Staff roles
 
-### 📩 SMS Notifications (Kavenegar)
-- Order confirmation / status updates
-- OTP/verification (optional future)
-- Queue-based sending (jobs)
+Powered by **Filament Shield** and **Spatie Permission**.
 
-### 📰 CMS & Content Management
-- Pages (dynamic, multilingual)
-- Menus
-- Banners / sliders
-- Site settings (general, SEO, contact)
+### 🌍 Multilingual Experience
+Built for international trade scenarios with support for:
 
-### 🌍 Multilingual + RTL
-- Persian / English
-- RTL-ready UI
-- Translation strategy (models + UI strings)
+- English
+- Persian
+- RTL layout compatibility
+- translatable content structure
+- future language expansion
+
+### 🧾 Operational Traceability
+Administrative actions are logged for accountability and audit readiness through structured activity logging.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Core Business Modules
 
-- **Backend:** Laravel 12
-- **Admin Panel:** Filament (v3)
-- **Authorization:** Filament Shield + Spatie Permission
-- **Media:** Spatie Media Library
-- **Audit Trail:** Spatie Activitylog
-- **Database:** MySQL / MariaDB (recommended)
+### 1) Product Information Management (PIM)
+A structured product system for premium stone catalogs:
+
+- categories and subcategories
+- stone products and variants
+- technical specifications
+- SEO metadata
+- featured products
+- downloadable assets and media galleries
+
+### 2) Dynamic Attribute Engine
+A scalable architecture for product-specific attributes without hardcoding every field:
+
+- custom attributes
+- reusable values
+- category-based assignment
+- extensible metadata structure
+
+### 3) Inventory & Stock Control
+Designed for operational accuracy:
+
+- inventory by product
+- quantity by unit or $m^2$
+- thresholds and low-stock alerts
+- future reservation logic for orders
+
+### 4) Orders & Sales Flow
+A full commerce pipeline is planned to include:
+
+- cart and checkout
+- order lifecycle management
+- order items and pricing snapshots
+- payment processing
+- admin-side order operations
+
+### 5) Payments & Transactions
+Planned with a clean driver-based architecture for maintainability:
+
+- payment request handling
+- callback verification
+- transaction logs
+- duplicate payment prevention
+
+### 6) CMS & Brand Management
+Content administration for a premium frontend experience:
+
+- pages
+- menus
+- banners / sliders
+- settings
+- SEO controls
+- multilingual publishing
+
+### 7) Notifications & Integrations
+Operational communication and external services:
+
+- Kavenegar SMS integration
+- order notifications
+- future API capabilities
+- background jobs and queues
 
 ---
 
-## 📦 Installed Packages (Key)
+## 🧱 Architecture & Engineering Standards
 
-- `filament/filament`
-- `bezhansalleh/filament-shield`
-- `spatie/laravel-permission`
-- `spatie/laravel-medialibrary`
-- `spatie/laravel-activitylog`
+This project is being built with a strong emphasis on modern software engineering principles:
+
+- **SOLID Principles**
+- **Clean Architecture mindset**
+- **Modular domain-driven structure**
+- **Service / Repository separation**
+- **Action-based application flow where helpful**
+- **Scalable admin resource design**
+- **Migration-first development**
+- **Maintainable and reviewable codebase**
+
+The intention is to create a product that remains clean and extendable as complexity grows.
 
 ---
 
-## ⚙️ Local Development Setup
+## ⚙️ Current Technical Foundation
 
-### 1) Clone
+The current implementation already includes the administrative backbone of the platform:
+
+- ✅ **Laravel 12**
+- ✅ **Filament Admin Panel**
+- ✅ **Filament Shield**
+- ✅ **Spatie Laravel Permission**
+- ✅ **Spatie Media Library**
+- ✅ **Spatie Activitylog**
+
+This means the project is now ready to move from **infrastructure setup** into **core business module implementation**.
+
+---
+
+## 🧰 Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| Backend | Laravel 12 |
+| Admin Panel | Filament 3 |
+| Language | PHP 8.2+ |
+| Authorization | Filament Shield + Spatie Permission |
+| Media Management | Spatie Media Library |
+| Activity Logging | Spatie Activitylog |
+| Database | MySQL / MariaDB |
+| Frontend Direction | CMS-driven, multilingual, RTL-ready |
+
+---
+
+## 🗺️ Development Roadmap
+
+### Phase I — Administrative Foundation
+- [x] Laravel installation
+- [x] Filament setup
+- [x] Role & permission infrastructure
+- [x] Media management integration
+- [x] Activity logging integration
+
+### Phase II — Core Catalog System
+- [ ] Categories
+- [ ] Products / Stones
+- [ ] Dynamic attributes
+- [ ] SEO-ready slugs and content fields
+- [ ] Filament resources for product management
+
+### Phase III — Inventory Layer
+- [ ] Stock model
+- [ ] Stock updates
+- [ ] Inventory logs
+- [ ] Low stock alerts
+
+### Phase IV — Commerce Layer
+- [ ] Cart
+- [ ] Orders
+- [ ] Payments
+- [ ] Transaction verification
+- [ ] Admin order management
+
+### Phase V — CMS & Website
+- [ ] Pages
+- [ ] Menus
+- [ ] Banners
+- [ ] General settings
+- [ ] Multilingual publishing
+
+### Phase VI — Integrations
+- [ ] Kavenegar SMS
+- [ ] Queue-based notifications
+- [ ] Future partner/API integrations
+
+---
+
+## 🔍 Repository Purpose
+
+This repository is intended to demonstrate:
+
+- technical architecture
+- engineering discipline
+- Laravel ecosystem expertise
+- admin system design
+- scalable product planning
+- clean implementation strategy
+
+It represents both **technical capability** and **product development direction**.
+
+---
+
+## 📌 Notes
+
+Some dependencies in the Laravel ecosystem may prefer newer PHP versions depending on package releases.
+
+In local development environments using PHP 8.2, installation may occasionally require:
 ```bash
-git clone <REPOSITORY_URL>
-cd <PROJECT_FOLDER>
+--ignore-platform-req=php
